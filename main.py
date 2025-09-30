@@ -12,6 +12,10 @@ def main():
     BLACK = (0,0,0)
 
     while True:
+        for event in pygame.event.get():
+            if event.type == pygame.QUIT:
+                return
+
         screen.fill(BLACK)
         pygame.display.flip()
 
