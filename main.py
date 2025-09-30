@@ -1,0 +1,22 @@
+import pygame
+from constants import *
+
+def main():
+    pygame.init
+    print("Starting Asteroids!")
+    print(f"Screen width: 1280")
+    print(f"Screen height: 720")
+
+    screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
+    
+    BLACK = (0,0,0)
+
+    while True:
+        screen.fill(BLACK)
+        pygame.display.flip()
+
+
+
+if __name__ == "__main__":
+    main()
+
